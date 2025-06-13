@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Internship Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sticky Banner -->
+  <div class="sticky-banner">
+    <a href="#apply" class="banner-btn">🚀 Apply for Internship</a>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" onclick="toggleSidebar()" tabindex="0">
+    ☰
+  </button>
+
+  <!-- Sidebar -->
+  <nav id="sidebar" class="sidebar" aria-hidden="true">
+    <ul>
+      <li><a href="#apply">Internship Application</a></li>
+      <li><a href="#offer">Offer Letter Generation</a></li>
+      <li><a href="#verify">Certificate Verification</a></li>
+      <li><a href="#team">Join Our Team</a></li>
+      <li><a href="#contact">Contact Info</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="content">
+    <section id="apply"><h2>Internship Application</h2><p>Fill out the form...</p></section>
+    <section id="offer"><h2>Offer Letter</h2><p>Generate your offer letter here...</p></section>
+    <section id="verify"><h2>Certificate Verification</h2><p>Verify your certificate online...</p></section>
+    <section id="team"><h2>Join Our Team</h2><p>Be a part of our mission...</p></section>
+    <section id="contact"><h2>Contact Info</h2><p>Get in touch with us...</p></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

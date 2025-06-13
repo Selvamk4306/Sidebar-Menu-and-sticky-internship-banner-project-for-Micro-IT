@@ -1,0 +1,117 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4f8;
+  color: #333;
+}
+
+/* Sticky Banner */
+.sticky-banner {
+  position: sticky;
+  top: 0;
+  background: #007bff;
+  padding: 10px 20px;
+  z-index: 1000;
+  text-align: left;
+}
+
+.banner-btn {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  background: #0056b3;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.banner-btn:hover {
+  background: #003f8c;
+}
+
+/* Hamburger */
+.hamburger {
+  position: fixed;
+  top: 60px;
+  left: 20px;
+  z-index: 999;
+  background: #007bff;
+  border: none;
+  color: white;
+  font-size: 28px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hamburger:focus {
+  outline: 2px solid #fff;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 220px;
+  height: 100%;
+  background: #343a40;
+  color: white;
+  transition: left 0.3s ease-in-out;
+  padding-top: 80px;
+  z-index: 998;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #555;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background: #495057;
+}
+
+/* Content */
+.content {
+  padding: 100px 20px 20px 20px;
+}
+
+.content section {
+  margin-bottom: 80px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 180px;
+  }
+
+  .hamburger {
+    top: 55px;
+    left: 10px;
+    padding: 8px 12px;
+  }
+
+  .content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
